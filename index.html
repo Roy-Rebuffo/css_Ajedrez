@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, red, yellow, green);
+        }
+        h1{
+            text-align: center;
+            margin: 100px auto;
+            font-family: sans-serif;
+            font-weight: 800;
+            border-bottom: 10px dotted;
+            padding-bottom: 20px;
+            width: 500px;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+            grid-template-rows: repeat(8, 100px);
+            width: 800px;
+            height: 600px;
+            border: 2px solid black;
+            margin: 100px auto;
+        }
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .black {
+            background-color: gray;
+        }
+        .white {
+            background-color: rgb(236, 236, 200);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ajedrez Challenge</h1>
+    <div class="board">
+        <div class="cell black">&#9814</div>
+        <div class="cell white">&#9816</div>
+        <div class="cell black">&#9815</div>
+        <div class="cell white">&#9813</div>
+        <div class="cell black">&#9812</div>
+        <div class="cell white">&#9815</div>
+        <div class="cell black">&#9816</div>
+        <div class="cell white">&#9814</div>
+
+        <div class="cell white">&#9817</div>
+        <div class="cell black">&#9817</div>
+        <div class="cell white">&#9817</div>
+        <div class="cell black">&#9817</div>
+        <div class="cell white">&#9817</div>
+        <div class="cell black">&#9817</div>
+        <div class="cell white">&#9817</div>
+        <div class="cell black">&#9817</div>
+
+        <!-- Empty squares -->
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+
+        <!-- More empty squares -->
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+        <div class="cell white"></div>
+        <div class="cell black"></div>
+
+        <!-- Second row of white pawns -->
+        <div class="cell black">&#9823</div>
+        <div class="cell white">&#9823</div>
+        <div class="cell black">&#9823</div>
+        <div class="cell white">&#9823</div>
+        <div class="cell black">&#9823</div>
+        <div class="cell white">&#9823</div>
+        <div class="cell black">&#9823</div>
+        <div class="cell white">&#9823</div>
+
+        <!-- White pieces -->
+        <div class="cell white">&#9820</div>
+        <div class="cell black">&#9822</div>
+        <div class="cell white">&#9821</div>
+        <div class="cell black">&#9819</div>
+        <div class="cell white">&#9818</div>
+        <div class="cell black">&#9821</div>
+        <div class="cell white">&#9822</div>
+        <div class="cell black">&#9820</div>
+    </div>
+</body>
+</html>
